@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владислав Толстуха](https://up.htmlacademy.ru/adaptive/18/user/266767).
-* Наставник: Андрей Гинтер.
+* Наставник: [Андрей Гинтер](https://htmlacademy.ru/profile/id781369).
 
 ---
 
