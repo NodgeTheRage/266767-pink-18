@@ -3,10 +3,121 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <div class="header-wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo"><img src="#" width="5" height="5" alt="Логотип PINK">pink</a>
+          <button class="page-header__toggle" type="button">Переключение меню</button>
+        </div>
+        <nav class="page-nav">
+          <a class="page-nav__link" href="index.html">главная</a>
+          <a class="page-nav__link" href="photo.html">фотографии</a>
+          <a class="page-nav__link" href="form.html">конкурс</a>
+          <a class="page-nav__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrapper">
+        <h1 class="visually-hidden">Фотоприложение PINK</h1>
+        <section class="intro">
+          <div class="intro__top">
+            <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+            <img class="intro__images-hand" src="#" width="5" height="5" alt="Фото">
+          </div>
+          <div class="app">
+            <a class="app__download" href="#">Скачать приложение</a>
+            <ul class="app__list app-stores">
+              <li class="app-stores__item">
+                <a class="app-stores__link" href="#" aria-label="Скачать для apple">
+                  <i class="app-stores__icon app-stores__icon--1"></i>
+                </a>
+              </li>
+              <li class="app-stores__item">
+                <a class="app-stores__link" href="#" aria-label="Скачать для Android">
+                  <i class="app-stores__icon app-stores__icon--2"></i>
+                </a>
+              </li>
+              <li class="app-stores__item">
+                <a class="app-stores__link" href="#" aria-label="Скачать для Windows">
+                  <i class="app-stores__icon app-stores__icon--3"></i>
+                </a>
+              </li>
+            </ul>
+            <span class="app__download-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+          </div>
+        </section>
+        <section class="information">
+          <h2 class="information__intro">
+            <span class="information__intro-top">Устали от серости мегаполиса?</span>
+            <span class="information__intro-bot">Нам есть, что вам
+              предложить!</span>
+          </h2>
+          <ul class="information__list">
+            <li class="information__list-item">
+              <h4 class="information__list-title">Поднимает настроение</h4>
+              <p class="information__list-desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h4 class="information__list-title">Меняет мир вокруг</h4>
+              <p class="information__list-desc">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h4 class="information__list-title">Заводит новых друзей</h4>
+              <p class="information__list-desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="information__img" src="#" width="5" height="5" alt="Телефон">
+        </section>
+        <section class="reviews">
+          <h2 class="visually-hidden">Обзоры от пользователей</h2>
+          <ul class="reviews__list reviews-list">
+            <li class="reviews-list__item">
+              <h4 class="reviews-list__name">Николай петров</h4>
+              <p class="reviews-list__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <div class="reviews__buttons">
+            <button class="reviews__button reviews__button-active"></button>
+            <button class="reviews__button"></button>
+            <button class="reviews__button"></button>
+          </div>
+        </section>
+        <section class="app-prices">
+          <h2 class="visually-hidden">Описание версий приложения</h2>
+          <ul class="prices-block">
+            <li class="prices-block__item">
+              <div class="prices-block__head">
+                <h4 class="prices-block__title">СТАНДАРТ</h4>
+                <span class="prices-block__price">3,99 USD</span>
+              </div>
+              <ul class="prices-block__list">
+                <li class="prices-block__list-item">
+                  <span class="prices-block__list-function">Розовый фильтр</span>
+                  <i class="prices-block__list-icon prices-block__list-icon--1"></i>
+                </li>
+                <li class="prices-block__list-item">
+                  <span class="prices-block__list-function">Смайлики</span>
+                  <i class="prices-block__list-icon prices-block__list-icon--1"></i>
+                </li>
+                <li class="prices-block__list-item">
+                  <span class="prices-block__list-function">Комментарии</span>
+                  <i class="prices-block__list-icon prices-block__list-icon--2"></i>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="app-prices__buttons">
+            <button class="app-prices__button"></button>
+            <button class="app-prices__button app-prices__button-active"></button>
+            <button class="app-prices__button"></button>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
