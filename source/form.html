@@ -23,6 +23,72 @@
     <main class="main">
       <section class="event">
         <h1 class="event__head">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+        <form class="event__form" method="get" action="https://echo.htmlacademy.ru">
+
+          <div class="event__form--credentials">
+            <p class="event__form--title">Поделитесь свое историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <label class="event__form--label" for="surname">ФАМИЛИЯ:
+              <input type="text" class="event__form--surname" id="surname" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+            </label>
+            <label class="event__form--label" for="name">ИМЯ:
+              <input type="text" class="event__form--name" id="name" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+            </label>
+            <label class="event__form--label" for="patronymic">ОТЧЕСТВО:
+              <input type="text" class="event__form--patronymic" id="patronymic" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]+$">
+            </label>
+          </div>
+          <div class="event__form--achievements">
+            <p class="event__form--titles">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</p>
+            <ul class="event__form--list">
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="selfie" id="selfie-shark" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="beach" id="beach-burnt" checked>
+                <label for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="chuck" id="chuck-norris">
+                <label for="chuck">Видел Чака Норриса</label>
+              </li>
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="souvenirs" id="souvenirs-bought">
+                <label for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="tower" id="tower-hold" checked>
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li class="event__form--item" >
+                <input class="event__form--checkbox" type="checkbox" name="hotel" id="hotel-destroyed">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+          <div class="event__form--feedback">
+            <label  for="phone">Номер телефона</label>
+            <input class="event__form--phone" type="tel" name="tel" id="phone" placeholder="Номер телефона, пожалуйста" pattern="8[0-9]{10}">
+            <label for="user-mail">Адрес почты</label>
+            <input class="event__form--email" type="email" name="email" id="user-mail" placeholder="Введите почту*" required>
+          </div>
+          <div class="event__form--travel">
+            <p class="event__form--titles">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</p>
+            <input class="event__form--device" type="radio" name="device" value="ios" id="ios" checked>
+            <label for="ios">Pink для IOS</label>
+            <input class="event__form--device" type="radio" name="device" value="anroid" id="anroid" >
+            <label for="anroid">Pink для Anroid</label>
+            <input class="event__form--device" type="radio" name="device" value="windows" id="windows">
+            <label for="windows">Windows Phone</label>
+          </div>
+          <div class="event__form--emotions">
+            <p class="event__form--titles">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+            <textarea id="text-area" name="emotions-area" class="event__form--emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <button type="submit" class="filter-button">отправить</button>
+          <p class="event__form--required">* - обязательные поля</p>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
