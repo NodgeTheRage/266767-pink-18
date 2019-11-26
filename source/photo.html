@@ -7,28 +7,38 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-wrapper">
-        <div class="page-header__top">
-          <a class="page-header__logo" href="index.html"><img src="#" width="5" height="5" alt="Логотип PINK">pink</a>
-          <button class="page-header__toggle" type="button">Переключение меню</button>
-        </div>
+      <div class="wrapper">
         <nav class="page-nav">
-          <a class="page-nav__link" href="index.html">главная</a>
-          <a class="page-nav__link" href="photo.html">фотографии</a>
-          <a class="page-nav__link" href="form.html">конкурс</a>
-          <a class="page-nav__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+          <ul class="nav-list page-nav__list">
+            <li class="nav-list__item">
+              <a class="nav-list__logo" href="index.html"><img class="nav-list__img" src="#" width="5" height="5" alt="Логотип PINK">pink</a>
+              <button class="nav-list__toggle" type="button">Переключение меню</button>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="photo.html">фотографии</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">конкурс</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="main-wrapper">
+      <div class="wrapper">
         <section class="intro">
           <h1 class="intro__title">Фотографии пользователей</h1>
         </section>
         <section class="photos">
-          <p class="photos__desc">Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?</p>
-          <ul class="photo-list">
+          <h2 class="photos__desc">Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?</h2>
+          <ul class="photo-list photos__list">
             <li class="photo-list__item">
               <a class="photo-list__link photo-list__link--best" href="#">
                 <img class="photo-list__image" src="#" width="5" height="5" alt="Фото пользователя"></a>
@@ -37,10 +47,10 @@
                 </h4>
                 <p class="photo-list__desc">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               </div>
-              <div class="photos-list__like-button">
-                <button class="photos-list__button"></button>
-                <span class="photos-list__love">Нравится:</span>
-                <span class="photos-list__count">215</span>
+              <div class="photo-list__like-button">
+                <button class="photo-list__button"></button>
+                <span class="photo-list__love">Нравится:</span>
+                <span class="photo-list__count">215</span>
               </div>
             </li>
             <li class="photo-list__item">
@@ -50,10 +60,10 @@
                 <h4 class="photo-list__author">Левон<span class="photo-list__time">(5 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Вчера он на луну летал, сегодня в руки к нам попал</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">356</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">356</span>
                 </div>
               </div>
             </li>
@@ -64,10 +74,10 @@
                 <h4 class="photo-list__author">Антон<span class="photo-list__time">(12 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Соседи будут рады!</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">666</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">666</span>
                 </div>
               </div>
             </li>
@@ -78,10 +88,10 @@
                 <h4 class="photo-list__author">Борис<span class="photo-list__time">(20 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Здесь могла быть ваша цитата о высоком и вечном</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">215</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">215</span>
                 </div>
               </div>
             </li>
@@ -92,10 +102,10 @@
                 <h4 class="photo-list__author">Сергей<span class="photo-list__time">(25 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Самая кубанская в мире!</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">4</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">4</span>
                 </div>
               </div>
             </li>
@@ -106,10 +116,10 @@
                 <h4 class="photo-list__author">Максим<span class="photo-list__time">(40 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Где снег-то?</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">150</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">150</span>
                 </div>
               </div>
             </li>
@@ -120,63 +130,70 @@
                 <h4 class="photo-list__author">Надежда<span class="photo-list__time">(45 часов назад)</span>
                 </h4>
                 <p class="photo-list__desc">Всем GM и взаимные лайки</p>
-                <div class="photos-list__like-button">
-                  <button class="photos-list__button"></button>
-                  <span class="photos-list__love">Нравится:</span>
-                  <span class="photos-list__count">2560</span>
+                <div class="photo-list__like-button">
+                  <button class="photo-list__button"></button>
+                  <span class="photo-list__love">Нравится:</span>
+                  <span class="photo-list__count">2560</span>
                 </div>
               </div>
             </li>
           </ul>
         </section>
         <section class="post">
-          <p class="post__title">
-            Затмите их всех! <span class="post__title--line-break">Выкладывайте все, что накопилось в телефоне!</span>
-          </p>
-          <form class="post__form" method="get" action="https://echo.htmlacademy.ru">
-            <canvas class="post__form--photo" id="edited-photo" width="200" height="400"></canvas>
-            <ul class="post__form--list">
-              <li class="post__form--item">
-                <input type="button" class="post__form--filter--1">
-                <input type="range" class="post__form--range--1">
+          <h3 class="post__title">
+            Затмите их всех! <span class="post__title-line-break">Выкладывайте все, что накопилось в телефоне!</span>
+          </h3>
+          <form class="post post__form" method="get" action="https://echo.htmlacademy.ru">
+            <img class="post__photo" src="#" width="5" height="5" alt="Редактируемое фото">
+            <ul class="post__list">
+              <li class="post__item">
+                <button type="button" class="post__filter-1"></button>
               </li>
-              <li class="post__form--item">
-                <input type="button" class="post__form--filter--2">
-                <input type="range" class="post__form--range--2">
+              <li class="post__item">
+                <button type="button" class="post__filter-2"></button>
               </li>
-              <li class="post__form--item">
-                <input type="button" class="post__form--filter--3">
-                <input type="range" class="post__form--range--3">
+              <li class="post__item">
+                <button type="button" class="post__filter-3"></button>
               </li>
             </ul>
-            <button class="post__form--submit" type="submit">Запостить</button>
-            <button class="post__form--reset" type="reset">Отмена</button>
+            <div class="post__range-block range-block">
+              <!--Могу это так же закинуть в список, и дисплей вешать уже на лишку а не на инпут -->
+              <input type="range" class="post__range post__range--display">
+              <input type="range" class="post__range">
+              <input type="range" class="post__range">
+            </div>
+            <div class="post__buttons-block buttons-block">
+              <button class="post__buttons post__buttons--submit" type="submit">Запостить</button>
+              <button class="post__buttons post__buttons--reset" type="reset">Отмена</button>
+            </div>
           </form>
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="#" width="5" height="5" alt="Лого" aria-label="Главная страница">
-        </a>
-      </div>
-      <div class="socials page-footer__socials">
-        <a class="socials__button" href="#" aria-label="Мы Твиттере">
-          <i class="socials__twitter-logo"></i>
-        </a>
-        <a class="socials__button" href="#" aria-label="Мы в Фейсбуке">
-          <i class="socials__facebook-logo"></i>
-        </a>
-        <a class="socials__button" href="#" aria-label="Мы в Ютубе">
-          <i class="socials__youtube-logo"></i>
-        </a>
-      </div>
-      <div class="page-footer__developer">
-        <span>Разработано</span>
-        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
-          <img class="page-footer__developer-logo" src="#" width="5" height="5" alt="Лого HTML Academy" >
-        </a>
+      <div class="wrapper">
+        <div class="page-footer__logo logo">
+          <a class="page-footer__logo-link" href="index.html">
+            <img class="page-footer__logo-image" src="#" width="5" height="5" alt="Лого" aria-label="Главная страница">
+          </a>
+        </div>
+        <div class="socials page-footer__socials">
+          <a class="socials__button" href="#" aria-label="Мы Твиттере">
+            <i class="socials__icons socials__icons--twitter"></i>
+          </a>
+          <a class="socials__button" href="#" aria-label="Мы в Фейсбуке">
+            <i class="socials__icons socials__icons--facebook"></i>
+          </a>
+          <a class="socials__button" href="#" aria-label="Мы в Ютубе">
+            <i class="socials__icons socials__icons--youtube"></i>
+          </a>
+        </div>
+        <div class="page-footer__developer">
+          <span class="page-footer__developer-text">Разработано</span>
+          <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
+            <img class="page-footer__developer-logo" src="#" width="5" height="5" alt="Лого HTML Academy" >
+          </a>
+        </div>
       </div>
     </footer>
   </body>
