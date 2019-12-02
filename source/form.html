@@ -38,16 +38,23 @@
         <p class="event__title">Поделитесь свое историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
         <form class="event__form" method="get" action="https://echo.htmlacademy.ru">
           <div class="credentials event__credentials">
-
-            <label class="credentials__label">ФАМИЛИЯ:
-              <input type="text" class="credentials__data" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
-            </label>
-            <label class="credentials__label">ИМЯ:
-              <input type="text" class="credentials__data" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
-            </label>
-            <label class="credentials__label">ОТЧЕСТВО:
-              <input type="text" class="credentials__data" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]+$">
-            </label>
+            <ul class="credentials__list">
+              <li class="credentials__item">
+                <label class="credentials__label">ФАМИЛИЯ:
+                  <input type="text" class="credentials__data" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+                </label>
+              </li>
+              <li class="credentials__item">
+                <label class="credentials__label">ИМЯ:
+                  <input type="text" class="credentials__data" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]+$" required>
+                </label>
+              </li>
+              <li class="credentials__item">
+                <label class="credentials__label">ОТЧЕСТВО:
+                  <input type="text" class="credentials__data" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]+$">
+                </label>
+              </li>
+            </ul>
           </div>
           <div class="achievements event__achievements">
             <h2 class="event__titles">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h2>
