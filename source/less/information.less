@@ -1,0 +1,68 @@
+.information {
+  min-width: 320px;
+}
+.information__intro{
+  color: #283645;
+  font-weight: 300;
+  font-size: 24px;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  line-height: 29px;
+}
+.information__intro-bot {
+  margin-top: 29px;
+}
+.information__block {
+  background-color: #f2f2f2;
+  min-height: 785px;
+  margin-top: 32px;
+  position:relative;
+}
+.information__block::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top left, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  background-repeat: no-repeat;
+  min-height: 31px;
+  min-width: 320px;
+}
+.information-list {
+  list-style: none;
+  padding-top: 80px;
+  padding-left: 0;
+}
+.information-list__item {
+  width: 261px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+.information-list__title {
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+.information-list__desc {
+  color: #283645;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+.information__block::after {
+  content: "";
+  position: absolute;
+  display:flex;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  height: 278px;
+  width: 320px;
+  bottom: 0px;
+}
