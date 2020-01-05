@@ -1,72 +1,62 @@
-.wrapper--footer {
-  display: flex;
-  min-height: 285px;
-  flex-direction: column;
-}
-.page-footer__logo {
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom:0 ;
-}
-.page-footer__image {
-  display: flex;
-  background-image: url(../img/logo-pink-blue-mobile.svg);
-  background-repeat: no-repeat;
-  min-width: 147px;
-  min-height: 41px;
-}
-.socials {
-  display: flex;
-  margin-top: 40px;
-  margin-left: 72px;
+.wrapper__footer {
+    text-align: center;
+    padding-top: 25px;
 }
 
-.socials__button {
-  width: 51px;
-  margin-right: 11px;
+.page-footer__image {
+    display: flex;
+    background-image: url(../img/logo-pink-blue-mobile.svg);
+    background-repeat: no-repeat;
+    min-width: 147px;
+    min-height: 41px;
+    display: inline-block;
+}
+.socials {
+    display: flex;
+    margin: 42px auto 0 auto;
+    width: 186px;
+    justify-content: space-around;
 }
 .socials__icons {
-  display: flex;
-  width: 45px;
-  height: 45px;
-  border: 3px solid #e9ebec;
-  border-radius: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  &--twitter {
-    background-image: url(../img/icon-twitter.svg);
-  }
-  &--facebook {
-    background-image: url(../img/icon-facebook.svg);
-  }
-  &--youtube {
-    background-image: url(../img/icon-youtube.svg);
-  }
-  &:hover {
-    border-color: #283645;
-  }
-  &:active {
-    opacity: 0.3;
-  }
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--twitter {
+        background-image: url(../img/icon-twitter.svg);
+    }
+    &--facebook {
+        background-image: url(../img/icon-facebook.svg);
+    }
+    &--youtube {
+        background-image: url(../img/icon-youtube.svg);
+    }
+    &:hover {
+        border-color: #283645;
+    }
+    &:active {
+        opacity: 0.3;
+    }
 }
 .developer {
-  display: flex;
-  padding-left: 95px;
-  padding-top: 44px;
+    display: flex;
+    margin: 44px auto 0 auto;
+    width: 137px;
+    align-items: center;
 }
 .developer__text {
-  font-size: 14px;
-  font-weight: 400;
-  color: #283645;
-  margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #283645;
+    margin-right: 16px;
 }
 .developer__logo {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
-}
-.developer__link {
-  margin-top: -5px;
+    display: inline-block;
+    width: 27px;
+    height: 35px;
+    background-image: url(../img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
 }

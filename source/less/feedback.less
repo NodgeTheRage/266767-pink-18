@@ -1,0 +1,47 @@
+.main-footer {
+    text-align: center;
+    padding-top: 45px;
+}
+.feedback {
+    color: #283645;
+    font-size: 24px;
+    font-weight: 300;
+}
+.feedback__list {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.feedback__title {
+    width: 250px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.feedback__desc {
+    display: inline-block;
+    text-decoration: none;
+    color: #d22856;
+    width: 225px;
+}
+.feedback__map {
+}
+.feedback__map {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/bg-map-mobile@1x.png") no-repeat center;
+    min-height: 200px;
+    background-position: top -400px center;
+    &::before {
+        content:"";
+        position: absolute;
+        display: inline-block;
+        background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+        top: 0;
+        left: 50%;
+        width: 596px;
+        height: 62px;
+        transform: translatex(-50%);
+    }
+}
