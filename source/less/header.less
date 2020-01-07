@@ -1,43 +1,83 @@
-
 .nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    top: 68px;
+    left: 0;
+    margin: 0;
+    background-color: #283645;
+    width:  100%;
+    &--show{
+        display: block;
+        border-top: 1px solid #000;
+    }
 }
 .nav-list__item {
-  display: flex;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000;
+    width:  100%;
 }
 .nav-list__link {
-  display: flex;
-  background-color: #283645;
-  text-decoration: none;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 18px;
-  min-width: 320px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  justify-content: center;
-  font-weight: 700;
-}
-.nav-list__link:hover {
-  color: #d22856;
-}
-.nav-list__link:active {
-  color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    width:  100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 700;
+    &:hover {
+        color: #d22856;
+    }
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
 }
 .page-nav__toggle {
-  display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: url(../img/icon-menu-burger.svg) no-repeat;
+    width: 50px;
+    height: 24px;
+    outline: none;
+    fill: #fff;
+    &:hover {
+        fill:#d22856;
+    }
+    &--cross {
+        background: url(../img/icon-menu-cross.svg) no-repeat;
+        background-position: center;
+    }
 }
-.logo {
-  background-color: #283645;
-  min-height: 69px;
-  border-bottom: 1px solid #000;
-  min-width: 320px;
+.logo__img {
+    fill: #fff;
+    &--active:hover {
+        fill: #d22856;
+        }
 }
-.logo__img:hover {
-  fill: #d22856;
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 6px 19px 21px;
+    text-align: center;
+}
+.page-header {
+    background-color: #283645;
+    &--menu {
+        padding-bottom: 191px;
+    }
+    pointer-events: initial;
+    width: 100%;
+
+    &--inactive {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0 ,0 ,0, 0.3);
+    }
 }

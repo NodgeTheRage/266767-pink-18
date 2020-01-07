@@ -1,46 +1,48 @@
 .intro {
-  display:flex;
-  flex-wrap: wrap;
+  color: #fff;
+  text-align: center;
 }
 .intro__top {
-  min-height: 395px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: top -67px left 0px;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat;
+  background-position: top 0 left 50%;
+  background-color: #283645;
 }
 .intro__title {
-  color: #fff;
   font-weight: 300;
-  text-align: center;
-  padding-left: 48px;
-  max-width: 225px;
+  width: 225px;
+  display: inline-block;
+  line-height: 30px;
+}
+.intro__wrapper::after {
+  content: "";
+  position: absolute;
+  background: url(../img/iphone-hand-mobile@1x.png)  no-repeat center 0px;
+  width: 258px;
+  height: 286px;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-62%);
+}
+.intro__wrapper {
+  position: relative;
+  padding-bottom: 294px;
+  padding-top: 67px;
 }
 .app {
-  min-height: 271px;
   background-color: #1d2631;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
+  padding-top: 29px;
+  padding-bottom: 32px;
 }
 .app__download  {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   border: 3px solid #fff;
   border-radius: 30px;
-  max-width: 263px;
-  padding: 5px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 29px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding: 10px 37px 15px 37px;
   &:hover{
     background-color: #fff;
     color: #d22856;
@@ -51,18 +53,16 @@
   }
 }
 .app__list {
-  max-width: 240px;
+  width: 240px;
   list-style:  none;
   display: flex;
   align-items:flex-end;
-  margin-top: 30px;
+  margin: 30px auto 22px auto;
   justify-content: space-around;
+  padding: 0;
 }
 .app__link {
   display: flex;
-}
-.app__item {
-
 }
 .app__icon--apple {
   background-image: url(../img/logo-apple.svg);
