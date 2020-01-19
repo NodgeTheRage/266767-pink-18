@@ -26,6 +26,12 @@
   text-align: center;
   font-weight: 400;
 }
+.credentials__break{
+  display: block;
+}
+.event__add {
+  display: none;
+}
 .credentials__data {
   border: 2px solid #e5e5e5;
   padding: 24px 24px 20px 20px;
@@ -223,3 +229,324 @@
 .event__star {
   color: #d22856;
 }
+.event__intro {
+  display: none;
+}
+@media (min-width: @tablet-width){
+  .event {
+    padding-top: 92px;
+  }
+  .credentials {
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+  .credentials-second {
+    order: 3;
+    padding: 58px 0px 20px 21px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .event__form {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .event__intro {
+    display: block;
+  }
+  .event__title {
+    font-size: 18px;
+    line-height: 30px;
+    width: 550px;
+  }
+  .credentials__item {
+    width: 660px;
+    margin-left: 0;
+    margin-bottom: 47px;
+  }
+  .event__list {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 34px;
+  }
+  .credentials__break {
+    display: none;
+  }
+  .credentials__data {
+    margin-left: 15px;
+    width: 477px;
+    &--long {
+      width: 516px;
+    }
+  }
+  .credentials__label {
+    padding-left: 20px;
+  }
+  .travel {
+    order: 2;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 21px;
+    background-color: #fff;
+  }
+
+  .achievements {
+    order: 4;
+  }
+  .emotions {
+    order: 5;
+    border: 2px solid #e5e5e5;
+    width: 618px;
+    box-sizing: border-box;
+    width: 618px;
+    margin: 67px auto 32px;
+    padding-top: 46px;
+    padding-bottom: 42px;
+    position: relative;
+  }
+  .event__text {
+    width: 490px;
+    height: 185px;
+    &::placeholder {
+      width: 475px;
+      padding-left:15px;
+      padding-top: 11px;
+    }
+  }
+  .event__required,
+  .event__button {
+    order: 6;
+  }
+  .event__required {
+    margin-top: 53px;
+    margin-right: 15px;
+  }
+  .event__button {
+    margin-left: 20px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    width: 300px;
+  }
+  .event__titles {
+    width: 330px;
+    background-color: white;
+    position: absolute;
+    top: 3.3%;
+    left: 25.8%;
+  }
+  .credentials-second .event__titles{
+    top: 12.9%;
+    left: 31.2%;
+    width: 260px;
+  }
+  .achievements .event__titles{
+    top: 6.6%;
+    left: 18.2%;
+    width: 430px;
+  }
+  .emotions .event__titles{
+    top: -3.4%;
+    left: 28.8%;
+    width: 260px;
+  }
+  .travel__device {
+    margin-right: 55px;
+  }
+  .travel__list {
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    width: 618px;
+    padding-top: 51px;
+    padding-left: 36px;
+    padding-bottom: 20px;
+  }
+  .credentials__list-second{
+    border: 2px solid #e5e5e5;
+    width: 618px;
+    padding-left: 43px;
+    box-sizing: border-box;
+    padding-top: 42px;
+  }
+  .achievements {
+    position: relative;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-top: 47px;
+  }
+  .achievements__list {
+    border: 2px solid #e5e5e5;
+    width: 618px;
+    box-sizing: border-box;
+    padding-top: 47px;
+    padding-left: 38px;
+  }
+  .achievements__checkbox {
+    margin-right: 60px;
+  }
+  .achievements__label {
+    padding-top: 1px;
+  }
+
+  .credentials__list-second .credentials__item {
+    margin-bottom: 24px;
+  }
+  .credentials__label-second {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    position: relative;
+    width: 500px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 62px;
+      height: 63px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #e5e5e5;
+      z-index: 2;
+      top: 5px;
+      right: -15px;
+    }
+    &--phone::before {
+      background-image: url(../img/icon-phone.svg);
+      }
+      &--mail::before {
+        background-image: url(../img/icon-mail.svg);
+        }
+  }
+  .credentials__data-second {
+    width: 391px;
+    margin-bottom: 9px;
+    position: relative;
+  }
+  .credentials__mail,
+  .credentials__phone {
+    margin-left: 34px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .event {
+    padding-bottom: 0;
+  }
+  .event__title {
+    width: 759px;
+  }
+  .event__intro {
+    display: inline-block;
+  }
+  .event__form {
+    width: 980px;
+  }
+  .credentials {
+    width: 490px;
+    padding-top: 45px;
+    box-sizing: border-box;
+  }
+  .credentials__data {
+    margin-left: 15px;
+    width: 291px;
+    &--long {
+      width: 331px;
+    }
+  }
+  .credentials__item {
+    width: 490px;
+    margin-bottom: 48px;
+  }
+  .travel {
+    width: 490px;
+    box-sizing: border-box;
+    margin-top: 59px;
+  }
+  .travel__list {
+    width: 435px;
+    margin-left: 14px;
+    padding-left: 55px;
+    padding-top: 54px;
+    padding-bottom: 18px;
+  }
+  .travel__device {
+    margin-right: 53px;
+  }
+  .event__titles {
+    width: 360px;
+    top: 3.3%;
+    left: 14.6%;
+  }
+  .credentials-second {
+    width: 980px;
+    padding-top: 17px;
+    padding-left: 0px;
+  }
+  .credentials__list-second {
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 37px;
+    padding-bottom: 14px;
+  }
+  .credentials__label-second {
+    width: 375px;
+  }
+  .credentials-second .event__titles {
+    top: 4.3%;
+    left: 36.7%;
+  }
+  .credentials__list-second .credentials__item {
+    margin: 0;
+    width: 450px;
+  }
+  .credentials__mail, .credentials__phone {
+    width: 400px;
+  }
+  .achievements {
+    width: 980px;
+  }
+  .achievements__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 9px 9px 54px;
+    box-sizing: border-box;
+    width: 940px;
+    justify-content: center;
+    height: 231px;
+    margin-left: 0;
+  }
+  .achievements__item {
+    margin-right: 23px;
+    margin-left: 0px;
+  }
+  .achievements .event__titles {
+    top: 13.2%;
+    left: 28%;
+  }
+  .emotions {
+    width: 940px;
+    padding-top: 42px;
+    margin-top: 62px;
+    padding-bottom: 35px;
+  }
+  .emotions .event__titles {
+    top: -4.4%;
+    left: 36%;
+  }
+  .event__text {
+    width: 812px;
+    height: 120px;
+  }
+  .event__button {
+    margin-top: 33px;
+    margin-bottom: 0;
+  }
+  .event__add {
+    display: inline-block;
+  }
+  .event__required {
+    margin-top: 51px;
+    width: 320px;
+  }
+}
+

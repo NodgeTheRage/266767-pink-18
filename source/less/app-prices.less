@@ -104,3 +104,123 @@
         transform: scale(0.5);
     }
 }
+.description-list {
+    display: none;
+}
+@media (min-width: @tablet-width) {
+    .app-prices {
+        margin-top: 0px;
+        overflow: hidden;
+        text-transform: none;
+    }
+    .app-prices__wrapper {
+        width: 660px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+    }
+    .app-prices__list {
+        padding-top: 73px;
+    }
+    .app-prices::before {
+        height: 51px;
+    }
+    .app-prices__title {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: -3px;
+    }
+    .app-prices__price {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .prices-block__function {
+        display: none;
+    }
+    .app-prices__item {
+        width: 156px;
+    }
+    .prices-block__item {
+        min-height: 46px;
+        padding-top: 9px;
+        padding-bottom: 8px;
+        width: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    .app-prices__head {
+        padding: 12px 9px 8px 8px;
+        &::after {
+            background-size: 96%;
+            background-position: top 0px left -9px;
+            top: 0px;
+            left: 0px;
+        }
+    }
+    .app-prices__buttons {
+        display: none;
+    }
+    .description-list {
+        margin-left: 21px;
+        margin-top: 166px;
+        display: block;
+    }
+    .description-list__item {
+        text-align: left;
+        background-color: #fff;
+        padding: 7px 24px 8px 15px;
+        border: 1px solid #e5e5e5;
+        border-left: none;
+    }
+    .description-list__function {
+        font-size: 14px;
+        line-height: 30px;
+        color: #283645;
+
+    }
+}
+@media (min-width: @desktop-width) {
+    .app-prices::before {
+        height: 80px;
+    }
+    .app-prices__wrapper {
+        width: 1200px;
+        padding-top: 60px;
+        padding-left: 109px;
+    }
+    .description-list {
+        margin-top: 184px;
+    }
+    .description-list__item {
+        padding: 15px 65px 12px 23px;
+    }
+    .description-list__function {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .app-prices__price {
+        font-size: 24px;
+    }
+    .app-prices__title {
+        font-size: 18px;
+        margin-bottom: 2px;
+
+    }
+    .app-prices__item {
+        width: 235px;
+    }
+    .app-prices__head {
+        padding: 16px 7px;
+        &::after {
+            background-size: 100%;
+            background-position: top 0px left 0px;
+        }
+    }
+    .prices-block__item {
+        padding-top: 20px;
+        padding-bottom: 11px; 
+    }
+    .app-prices {
+        padding-bottom: 70px;
+    }
+}
