@@ -11,6 +11,7 @@
     &--show{
         display: block;
         border-top: 1px solid #000;
+        z-index:3;
     }
 }
 .nav-list__item {
@@ -77,7 +78,6 @@
         fill: #fff;
     }
     &:hover .logo__img-tablet {
-
         fill: #d22856;
     }
     &:active .logo__img-tablet {
@@ -101,7 +101,7 @@
 
     &--inactive {
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         background-color: rgba(0 ,0 ,0, 0.3);
     }
 }

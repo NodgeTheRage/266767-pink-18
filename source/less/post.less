@@ -40,6 +40,9 @@
 }
 .post__icon {
     opacity: 0.3;
+    &:hover:not(.post__icon--active) {
+        fill: #8d949b;
+    }
     &--active {
         fill: #d22856;
         opacity: 1;
@@ -111,6 +114,8 @@
     width: 240px;
     -webkit-appearance: none;
     display: none;
+    outline: none;
+    background-color: transparent;
     &--display{
         display: inline-block;
     }
@@ -191,6 +196,12 @@
     }
     &:focus::-ms-fill-upper {
         background: #fff;
+    }
+    &::-moz-range-thumb:active { 
+        background: #d22856;
+    }
+    &::-webkit-slider-thumb:active { 
+        background: #d22856;
     }
 }
 .post__title-break {
@@ -309,6 +320,10 @@
         pointer-events: none;
         cursor: auto;
     }
+    .post__image {
+        width: 300px;
+        height: 400px;
+    }
 }
 @media (min-width: @desktop-width) {
     .post__wrapper {
@@ -321,7 +336,7 @@
     .post__form {
         width: 940px;
         background-color: #f2f2f2;
-        padding: 55px 0 58px  80px;
+        padding: 55px 0 54px  80px;
     }
     .post__form-wrapper {
         width: 500px;
@@ -359,9 +374,10 @@
     }
     .post__button {
         min-width: 183px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         padding: 0px 26px 0px 33px;
         margin-top: 16px;
+        outline: none;
         &--submit {
             margin-right: 46px;
         }
