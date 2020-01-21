@@ -82,6 +82,7 @@
     margin: 0;
     font-size: 18px;
     line-height: 30px;
+    margin-top: -1px;
 }
 .app-prices__buttons {
     display: inline-block;
@@ -98,14 +99,29 @@
     transform: scale(0.3);
     box-sizing: border-box;
     cursor:pointer;
+    margin-left: -3px;
     &--active {
         border: 7px solid #2f3c4b;
         background-color: #fff;
         transform: scale(0.5);
     }
+    &:nth-child(2) {
+        margin-left: -3px;
+    }
 }
 .description-list {
     display: none;
+}
+.app-prices__hit {
+    position: absolute;
+    display: none;
+}
+.app-prices__head--hit .app-prices__hit {
+    display: block;
+    top: 11%;
+    left: 2.7%;
+    z-index: 1;
+    transform: rotate(-44deg);
 }
 @media (min-width: @tablet-width) {
     .app-prices {
@@ -118,6 +134,7 @@
         padding: 0;
         margin: 0 auto;
         display: flex;
+        box-sizing: border-box;
     }
     .app-prices__list {
         padding-top: 73px;
@@ -178,6 +195,10 @@
         color: #283645;
 
     }
+    .app-prices__head--hit .app-prices__hit {
+        top: 4%;
+        left: 4.3%;
+    }
 }
 @media (min-width: @desktop-width) {
     .app-prices::before {
@@ -210,7 +231,7 @@
         width: 235px;
     }
     .app-prices__head {
-        padding: 16px 7px;
+        padding: 16px 7px 17px;
         &::after {
             background-size: 100%;
             background-position: top 0px left 0px;
@@ -222,5 +243,9 @@
     }
     .app-prices {
         padding-bottom: 70px;
+    }
+    .app-prices__head--hit .app-prices__hit {
+        top: 13%;
+        left: 5%;
     }
 }
