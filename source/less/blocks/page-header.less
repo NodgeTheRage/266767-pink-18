@@ -1,0 +1,36 @@
+.page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 6px 19px 21px;
+    text-align: center;
+}
+.page-header {
+    background-color: #283645;
+    pointer-events: initial;
+    width: 100%;
+    &--inactive {
+        position: absolute;
+        z-index: 3;
+        background-color: rgba(0 ,0 ,0, 0.3);
+    }
+}
+@media (min-width: @tablet-width) {
+    .page-header__wrapper {
+        padding-top: 27px;
+        padding-bottom: 36px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .page-header__wrapper {
+        width: 1200px;
+        justify-content: space-between;
+        padding-right: 109px;
+        padding-left: 130px;
+        padding-bottom: 28px;
+    }
+    .page-header {
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

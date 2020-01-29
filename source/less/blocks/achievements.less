@@ -1,0 +1,189 @@
+.achievements {
+    background-color: #f2f2f2;
+    padding-top: 38px;
+    padding-bottom: 1px;
+    margin-bottom: -2px;
+}
+.achievements__item {
+    margin-bottom: 45px;
+    padding-top: 7px;
+    display: flex;
+    margin-left: 15px;
+}
+.achievements__item:nth-last-child(1) {
+    margin-bottom: 50px;
+}
+.achievements__label {
+    cursor: pointer;
+    font-size: 18px;
+}
+.achievements__checkbox {
+    position: relative;
+    width: 0;
+    height: 17px;
+    outline: none;
+    margin-right: 71px;
+    margin-top: -2px;
+    &:checked::after {
+        content: "";
+        display: block;
+        background: url("../img/icon-form-check.svg") no-repeat;
+        background-position: center;
+        background-color: white;
+        width: 29px;
+        height: 25px;
+        padding: 5px 3px;
+        top: 0;
+        left: 0;
+        border: 2px solid #e5e5e5;
+        cursor: pointer;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 25px;
+        padding: 5px 3px;
+        top: 0;
+        left: 0;
+        border: 2px solid #e5e5e5;
+        cursor: pointer;
+        background-color: white;
+    }
+    &:hover::after {
+        border-color: #283645;
+    }
+    &:active::after {
+        border-color: #d22856;
+    }
+}
+@-moz-document url-prefix() {
+    .achievements__label {
+        position: relative;
+        margin-top: 4px;
+        margin-bottom: -4px;
+    }
+    .achievements__checkbox {
+        z-index: -1;
+    }
+    .achievements__checkbox {
+        margin-right: 56px;
+    }
+    .achievements__checkbox:checked ~ .achievements__label {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background: url("../img/icon-form-check.svg") no-repeat;
+            background-position: center;
+            background-color: white;
+            width: 29px;
+            height: 25px;
+            padding: 5px 3px;
+            top: -4px;
+            left: -68px;
+            border: 2px solid #e5e5e5;
+            cursor: pointer;
+        }
+    }
+    .achievements__checkbox ~ .achievements__label {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 29px;
+            height: 25px;
+            padding: 5px 3px;
+            top: -4px;
+            left: -68px;
+            border: 2px solid #e5e5e5;
+            cursor: pointer;
+            background-color: white;
+        }
+    }
+    .achievements__checkbox ~ .achievements__label {
+        &:hover::after {
+            border-color: #283645;
+        }
+        &:active::after {
+            border-color: #d22856;
+        }
+    }
+    .achievements {
+        padding-bottom: 1px;
+    }
+}
+@media (min-width: @tablet-width){ 
+    .achievements .event__titles{
+        top: 6.6%;
+        left: 17.9%;
+        width: 430px;
+    }
+    .achievements {
+        position: relative;
+        background-color: #fff;
+        padding-left: 20px;
+        padding-top: 47px;
+        order: 4;
+        padding-bottom: 5px;
+    }
+    .achievements__list {
+        border: 2px solid #e5e5e5;
+        width: 618px;
+        box-sizing: border-box;
+        padding-top: 47px;
+        padding-left: 38px;
+    }
+    .achievements__checkbox {
+        margin-right: 60px;
+    }
+    .achievements__label {
+        padding-top: 1px;
+    }
+    @-moz-document url-prefix() {
+        .achievements__item {
+            padding-top: 6px;
+        }
+        .achievements__checkbox {
+            margin-right: 47px;
+        }
+        .achievements__checkbox:checked ~ .achievements__label::after,
+        .achievements__checkbox ~ .achievements__label::after {
+            left: -59px;
+        }
+        .achievements__list {
+            padding-bottom: 6px;
+            margin-bottom: 4px;
+        }   
+    }
+}
+@media (min-width: @desktop-width) {
+    .achievements {
+        width: 980px;
+    }
+    .achievements__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 40px 9px 9px 54px;
+        box-sizing: border-box;
+        width: 940px;
+        justify-content: center;
+        height: 231px;
+        margin-left: 0;
+    }
+    .achievements__item {
+        margin-right: 23px;
+        margin-left: 0px;
+    }
+    .achievements .event__titles {
+        top: 13.2%;
+        left: 28%;
+    }
+    @-moz-document url-prefix() {
+        .achievements__label {
+            margin-top: 0px;
+            margin-bottom: -1px;
+        }
+    }
+}

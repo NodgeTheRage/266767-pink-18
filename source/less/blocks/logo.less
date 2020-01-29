@@ -1,0 +1,76 @@
+.logo__img {
+    fill: #fff;
+}
+.logo__img-desktop,
+.logo__img-tablet {
+    display: none;
+    fill: #fff;
+}
+.logo__link--active {
+    cursor: pointer;
+    &:hover .logo__img {
+        fill: #d22856;
+    }
+    &:active .logo__img {
+        opacity:0.3;
+    }
+    &:hover .logo__img-tablet {
+        fill: #d22856;
+    }
+    &:active .logo__img-tablet {
+        opacity:0.3;
+    }
+    &:hover .logo__img-desktop {
+        fill: #d22856;
+    }
+}
+.logo__path--blue {
+    fill: #283645;
+}
+.logo__path--pink {
+    fill: #d22856;
+}
+.logo__img-footer:hover .logo__path--blue,
+.logo__img-footer:hover .logo__path-first,
+.logo__img-footer:hover .logo__path-second {
+    fill: #d22856;
+}
+.logo__img-footer:active .logo__path-second {
+    fill: #d22856;
+}
+@media (min-width: @tablet-width) {
+    .logo__img {
+        display: none;
+    }
+    .logo__img-tablet {
+        display: block;
+    }
+}
+@media (min-width: @desktop-width) {
+    .logo__img-tablet {
+        display: none;
+    }
+    .logo__img-desktop {
+        display: block;
+    }
+    .logo__path-second {
+        fill: #d22856;
+    }
+    .logo__link--active {
+        &:active .logo__img-desktop {
+            opacity:0.3;
+        }
+        &:active .logo__path-second {
+        }
+    }
+    .logo__path-first--footer {
+        fill: #283645;
+    }
+    .logo__path-second--footer {
+        fill: #283645;
+    }
+    .logo__path-second--pink,
+    .logo__path-first--pink {
+        fill: #d22856;
+    }
+}

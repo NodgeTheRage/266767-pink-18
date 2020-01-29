@@ -1,0 +1,54 @@
+.emotions {
+    padding-top: 35px;
+}
+.emotions__title {
+    margin-bottom: 15px;
+}
+.emotions {
+    text-align: center;
+}
+@-moz-document url-prefix() {
+    .emotions {
+        padding-top: 38px;
+    }
+}
+@media (min-width: @tablet-width){ 
+    .emotions {
+        order: 5;
+        border: 2px solid #e5e5e5;
+        width: 618px;
+        box-sizing: border-box;
+        width: 618px;
+        margin: 62px auto 31px;
+        padding-top: 46px;
+        padding-bottom: 39px;
+        position: relative;
+    }
+    .emotions .event__titles{
+        top: -10px;
+        left: 177px;
+        width: 260px;
+    }
+    @-moz-document url-prefix() {
+        .emotions {
+            margin-bottom: 24px;
+        }
+    }
+}
+@media (min-width: @desktop-width) { 
+    .emotions {
+        width: 940px;
+        padding-top: 42px;
+        margin-top: 62px;
+        padding-bottom: 31px;
+    }
+    .emotions .event__titles {
+        top: -10px;
+        left: 338px;
+    }
+    @-moz-document url-prefix() {
+        .emotions {
+            margin-bottom: 32px;
+        }
+    }
+}

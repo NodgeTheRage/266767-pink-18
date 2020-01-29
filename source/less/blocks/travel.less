@@ -1,0 +1,189 @@
+.travel {
+    background-color: #f2f2f2;
+    padding-top: 38px;
+    padding-bottom: 7px;
+}
+.travel__item {
+    margin-bottom: 40px;
+    margin-left: 16px;
+}
+.travel__label {
+    cursor: pointer;
+}
+.travel__device {
+    position: relative;
+    width: 0;
+    height: 17px;
+    outline: none;
+    margin-right: 62px;
+    margin-top: 10px;
+    margin-left: 6px;
+    &:checked::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #d22856;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        border: 10px solid white;
+        cursor: pointer;
+        margin-top: -6px;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        border: 10px solid white;
+        cursor: pointer;
+        margin-top: -6px;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        top: -2px;
+        left: -2px;
+        cursor: pointer;
+        margin-top: -6px;
+    }
+    &:hover::before {
+        background-color: #283645;
+    }
+    &:active::before {
+        background-color: #d22856;
+    }
+}
+@-moz-document url-prefix() { 
+    .travel__label {
+        position: relative;
+    }
+    .travel__device ~ .travel__label{
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            top: 2px;
+            left: -67px;
+            border: 10px solid white;
+            cursor: pointer;
+            margin-top: -6px;
+        }}
+    .travel__device ~ .travel__label {
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            background-color: #e5e5e5;
+            border-radius: 50%;
+            width: 39px;
+            height: 39px;
+            top: 0px;
+            left: -69px;
+            cursor: pointer;
+            margin-top: -6px;
+        }
+    }
+    .travel__device:checked ~ .travel__label {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #d22856;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            top: 2px;
+            left: -67px;
+            border: 10px solid white;
+            cursor: pointer;
+            margin-top: -6px;
+        }
+    }
+    .travel__device ~ .travel__label {
+        &:hover::before {
+            background-color: #283645;
+        }
+        &:active::before {
+            background-color: #d22856;
+        }
+    }
+    .travel__device {
+        margin-right: 49px;
+    }
+}
+@media (min-width: @tablet-width){
+    .travel {
+        order: 2;
+        position: relative;
+        padding-top: 20px;
+        padding-left: 21px;
+        background-color: #fff;
+    }
+    .travel__device {
+        margin-right: 55px;
+    }
+    .travel__list {
+        border: 2px solid #e5e5e5;
+        box-sizing: border-box;
+        width: 618px;
+        padding-top: 51px;
+        padding-left: 36px;
+        padding-bottom: 20px;
+    }
+    @-moz-document url-prefix() {
+        .travel__device {
+            margin-right: 40px;
+        }
+        .travel__device ~ .travel__label::before {
+            top: -2px;
+            left: -59px;
+        }
+        .travel__device:checked ~ .travel__label::after {
+            top: 0px;
+            left: -57px;
+        }
+        .travel__device ~ .travel__label::after {
+            top: 0px;
+            left: -57px;
+        }
+    }
+}
+@media (min-width: @desktop-width) {
+    .travel {
+        width: 490px;
+        box-sizing: border-box;
+        margin-top: 59px;
+    }
+    .travel__list {
+        width: 435px;
+        margin-left: 14px;
+        padding-left: 55px;
+        padding-top: 54px;
+        padding-bottom: 18px;
+    }
+    .travel__device {
+        margin-right: 53px;
+    }
+    @-moz-document url-prefix() {
+        .travel__device {
+            margin-right: 38px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.developer {
+    display: flex;
+    margin: 29px auto 0 auto;
+    width: 133px;
+    align-items: center;
+}
+.developer__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #283645;
+    margin-right: 16px;
+    margin-top: -5px;
+}
+.developer__link {
+    margin-top: 5px;
+}
+.developer__logo {
+    display: inline-block;
+    width: 27px;
+    height: 35px;
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+}
+.developer__image {
+    fill: #d22856;
+    &:hover {
+        fill: #283645;
+    }
+    &:active {
+        fill: #bec2c7;
+    }
+}
+@media (min-width: @tablet-width) {
+    .developer {
+        margin-top: 0;
+    }
+    .developer__text {
+        margin-right: 16px;
+        margin-top: -2px;
+        margin-left: 17px;
+    }
+    .developer__link {
+        margin-top: 10px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .developer {
+        margin-left: 148px;
+    }
+    .developer__text {
+        margin-left: 15px;
+        font-size: 18px;
+        margin-right: 14px;
+    }
+}

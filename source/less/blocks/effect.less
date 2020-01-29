@@ -1,0 +1,110 @@
+.effect {
+    display: none;
+}
+@media (min-width: @tablet-width) {
+    .effect {
+        display: block;
+    }
+    .effect__break {
+        display: block;
+    }
+    .effect__wrapper {
+        width: 660px;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .effect__time {
+        font-size: 96px;
+        font-weighT: 700;
+        background: url("../img/icon-timer.svg") no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 238px;
+        height: 276px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 59px;
+        fill: #dedede;
+    }
+    .effect__text {
+        border: 14px solid #d22856;
+        border-radius: 100%;
+        width: 203px;
+        height: 203px;
+        color: #d22856;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 53px;
+        margin-left: 3px;
+        padding-top: 16px;
+        padding-right: 3px;
+        box-sizing: border-box;
+    }
+    .effect__advantages {
+        width: 343px;
+        margin-top: 94px;
+        padding-left: 32px;
+        box-sizing: border-box;
+    }
+    .effect__title {
+        margin: 0;
+        font-size: 30px;
+        line-height: 36px;
+        width: 170px;
+    }
+    .effect__description {
+        font-size: 14px;
+        line-height: 24px;
+        color: #283645;
+        margin-top: 9px;
+        width: 305px;
+        margin-bottom: 10px;
+    }
+    .effect__link {
+        color: #d22856;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media (min-width: @desktop-width) {
+    .effect {
+        background-color: #f2f2f2;
+    }
+    .effect__wrapper {
+        width: 1200px;
+        padding-bottom: 102px;
+    }
+    .effect__time {
+        transform: scale(1.25);
+        margin-top: 39px;
+        margin-left: 55px;
+    }
+    .effect__advantages {
+        width: 600px;
+        padding-left: 0;
+        margin-left: -110px;
+        margin-top: 99px;
+    }
+    .effect__break {
+        display: none;
+    }
+    .effect__title {
+        width: 300px;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+    .effect__description {
+        font-size: 18px;
+        line-height: 30px;
+        width: 550px;
+        margin-bottom: 34px;
+    }
+    .effect__link {
+        font-size: 18px;
+    }
+    .effect__line-break {
+        display: block;
+    }
+}
